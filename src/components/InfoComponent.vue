@@ -9,10 +9,15 @@
           molestias.
         </p>
 
-        <v-btn :loading="loading" class="mr-4" color="success" rounded @click="change()"
+        <v-btn
+          :loading="loading"
+          class="mr-4"
+          color="success"
+          rounded
+          @click="change()"
           >Get Started</v-btn
         >
-        <v-btn color="primary" rounded>
+        <v-btn rounded @click="change1()" :loading="loading1" color="primary">
           <v-icon class="mr-2">mdi-play-circle-outline</v-icon> Watch</v-btn
         >
       </v-col>
@@ -25,28 +30,37 @@
 
 <script>
 export default {
-  data: () =>{
+  data: () => {
     return {
       loading: false,
-    }
+      loading1: false,
+    };
   },
   methods: {
-    change(){
-      this.loading = true
+    change() {
+      this.loading = true;
       setTimeout(() => {
-        this.loading = false
+        this.loading = false;
       }, 3000);
-    }
-  }
+    },
+    change1() {
+      this.loading1 = true;
+      setTimeout(() => {
+        this.loading1 = false;
+      }, 3000);
+    },
+  },
 };
 </script>
 
 <style scoped>
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-family: monospace;
   color: chartreuse;
+  font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 p {
   font-size: 16px;
