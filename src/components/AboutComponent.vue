@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-3 ">
+  <v-container class="mt-5 ">
       <v-row>
           <v-col lg="6">
             <img src="../assets/logo.png" width="100%" alt="" />
