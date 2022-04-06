@@ -6,3 +6,4 @@ push branch
 and 
 merge brand 
 do above something again
+add branch 2
