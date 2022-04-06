@@ -9,55 +9,34 @@
           </p>
         </div>
       </v-col>
-      <v-col lg="6">
+      <v-col lg="12" style="text-align: center" >
         <img src="https://picsum.photos/510/300?random" alt="" />
       </v-col>
-      <v-col lg="6">
-    
-  <v-form
-    ref="form"
-    
-    lazy-validation
-  >
-    <v-text-field
-     
-      label="Name"
-      required
-    ></v-text-field>
-
-    <v-text-field
-     
-      label="E-mail"
-      required
-    ></v-text-field>
-
-    <v-select
-      
-      
-      
-      label="Item"
-      required
-    ></v-select>
-
-
-    <v-btn
-   
-      color="success"
-      class="mt-4"
-    
-    >
-      Validate
-    </v-btn>
-
-
-    </v-form>
+      <v-col lg="12">
+    <ShowdiaComponet/>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-export default {};
+import ShowdiaComponet from './ShowdiaComponet.vue'
+
+export default {
+  
+   data: () => ({
+    //
+  }),
+  components:{
+ShowdiaComponet
+  },
+ 
+  methods: {
+    opendialog(){
+      console.log(2)
+    }
+  },
+};
 </script>
 
 <style>

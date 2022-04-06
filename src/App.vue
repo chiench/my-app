@@ -8,6 +8,7 @@
       <ShopComponent/>
       <GalleyConponent/>
       <ContactConponent/>
+      
     </v-main>
     <v-divider class="mt-20" />
       <FooterConponent/>
@@ -24,6 +25,8 @@ import GalleyConponent from './components/GalleyConponent.vue'
 import ContactConponent from './components/ContactConponent.vue'
 import FooterConponent from './components/FooterConponent.vue'
 
+
+
 export default {
   name: 'App',
   components: {
@@ -35,6 +38,7 @@ export default {
     GalleyConponent,
     ContactConponent,
     FooterConponent,
+   
    
   },
 
